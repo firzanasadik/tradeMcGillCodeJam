@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import "./App.css";
+import Cursor from "./containers/Cursor"
 import Routes from "./Routes";
 import Nav from "react-bootstrap/Nav";
 import { LinkContainer } from "react-router-bootstrap";
@@ -8,6 +9,7 @@ import { LinkContainer } from "react-router-bootstrap";
 function App() {
   return (
     <div className="App container py-3">
+      <Cursor />
       <Navbar collapseOnSelect bg="light" expand="md" className="mb-3">
         {/*links back to home page */}
         <Navbar.Brand href="/" className="font-weight-bold text-muted">
